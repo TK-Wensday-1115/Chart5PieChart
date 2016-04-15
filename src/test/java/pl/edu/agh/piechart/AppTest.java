@@ -1,4 +1,4 @@
-package pl.edu.agh.chart5;
+package pl.edu.agh.piechart;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
