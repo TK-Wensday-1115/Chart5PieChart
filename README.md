@@ -12,7 +12,7 @@ Demko gotowe do uruchomienia można znaleźć tutaj: [SamplePieChart.java](https
 
 2. Ustawianie wartości
     - jeśli klucz istnieje, to zmiana obecnej na podaną
-    - jeśli wartość jest ujemna to elemnt nie zostanie wyświetlony na wykresie
+    - jeśli wartość jest ujemna, to element nie zostanie wyświetlony na wykresie
     ```
     demo.setChartValue("JS", 7.2);
     demo.setChartValue("Ada", -10.2); // <-- ujemna! nie zostanie wyświetona
