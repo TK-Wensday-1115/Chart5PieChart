@@ -15,15 +15,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Pie chart with a custom label generator.
+ * Pie chart generator.
  */
+@SuppressWarnings("WeakerAccess")
 public class PieChart extends ApplicationFrame {
 
     private String title;
     private Map<String, Double> data;
     private PieDataset dataset;
-    private JFreeChart chart;
-    private ChartPanel chartPanel;
+
+    private int WIN_WIDTH = 640;
+    private int WIN_HEIGHT = 480;
 
     /**
      * Creates a pie chart.
@@ -38,15 +40,6 @@ public class PieChart extends ApplicationFrame {
         updatePieChart();
         RefineryUtilities.centerFrameOnScreen(this);
         setVisible(true);
-    }
-    
-    private void createDataSet(){
-        DefaultPieDataset result = new DefaultPieDataset();
-        for (String name : this.data.keySet()) {
-            result.setValue(name, this.data.get(name));
-        }
-        result.setValue("Java", new Double(43.2));
-        this.dataset = result;
     }
 
     /**
@@ -64,12 +57,29 @@ public class PieChart extends ApplicationFrame {
     }
 
     /**
+     * Change window height and width.
+     */
+    public void setChartSize(final int width, final int height) {
+        this.WIN_WIDTH = width;
+        this.WIN_HEIGHT = height;
+        updatePieChart();
+    }
+
+    private void createDataSet(){
+        DefaultPieDataset result = new DefaultPieDataset();
+        for (String name : this.data.keySet()) {
+            result.setValue(name, this.data.get(name));
+        }
+        this.dataset = result;
+    }
+
+    /**
      * Recreates PieChart with current data set.
      */
     private void updatePieChart(){
-        this.chart = createChart(this.title, this.dataset);
-        this.chartPanel = new ChartPanel(chart);
-        this.chartPanel.setPreferredSize(new java.awt.Dimension(640, 480));
+        JFreeChart chart = createChart(this.title, this.dataset);
+        ChartPanel chartPanel = new ChartPanel(chart);
+        chartPanel.setPreferredSize(new java.awt.Dimension(WIN_WIDTH, WIN_HEIGHT));
         setContentPane(chartPanel);
         pack();
     }
