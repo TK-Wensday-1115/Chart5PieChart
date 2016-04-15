@@ -20,7 +20,7 @@ Demko gotowe do uruchomienia można znaleźć tutaj: [SamplePieChart.java](https
     demo.setChartValue("Python", 37.2);
     ```
     
-3. zmiana rozmiarów okna z wykresem
+3. Zmiana rozmiarów okna z wykresem
     ```
     demo.setChartSize(1200, 600);
     ```
