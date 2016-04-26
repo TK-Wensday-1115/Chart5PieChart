@@ -17,12 +17,18 @@ public class PieChartPanel extends JPanel {
 
     /**
      * Creates a pie chart with default size.
-     * @param title the frame title.
+     * @param title frame title.
      */
     public PieChartPanel(final String title) {
         pieChartInit(title, 500, 500);
     }
 
+    /**
+     * Creates a pie chart with given title, width and height.
+     * @param title panel title
+     * @param width panel width
+     * @param height panel height
+     */
     public PieChartPanel(final  String title, final int width, final int height){
         pieChartInit(title, width, height);
     }
