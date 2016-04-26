@@ -11,8 +11,8 @@ public class SamplePieChart {
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         // Create JPanels (PieCharts)
-        PieChart pie = new PieChart("testing", 600, 600);
-        PieChart pie2 = new PieChart("testing 2");
+        PieChartPanel pie = new PieChartPanel("testing", 600, 600);
+        PieChartPanel pie2 = new PieChartPanel("testing 2");
 
         // add JPanels to JFrame
         frame.getContentPane().add(pie, BorderLayout.WEST);

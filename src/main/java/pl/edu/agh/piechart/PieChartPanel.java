@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PieChart extends JPanel {
+public class PieChartPanel extends JPanel {
 
     private Map<String, Double> data = new HashMap<String, Double>();
     private PiePlot3D piePlot3D = new PiePlot3D();
@@ -19,11 +19,11 @@ public class PieChart extends JPanel {
      * Creates a pie chart with default size.
      * @param title the frame title.
      */
-    public PieChart(final String title) {
+    public PieChartPanel(final String title) {
         pieChartInit(title, 500, 500);
     }
 
-    public PieChart(final  String title, final int width, final int height){
+    public PieChartPanel(final  String title, final int width, final int height){
         pieChartInit(title, width, height);
     }
 
