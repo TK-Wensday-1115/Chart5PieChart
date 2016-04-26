@@ -1,5 +1,6 @@
 # Chart5PieChart
 Komponent pozwalający na wyświetlanie wykresu kołowego.
+Diagram klasy PieChartPanel: [diagram](https://github.com/TK-Wensday-1115/Chart5PieChart/blob/master/misc/class_diagram.png).
 
 ## Inicjalizacja i użycie komponentu
 
