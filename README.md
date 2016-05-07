@@ -32,4 +32,5 @@ Demko gotowe do uruchomienia można znaleźć tutaj: [SamplePieChart.java](https
 ### Pierwsze wydanie
 
 Dostępna wersja tylko z biblioteką do wykresów oraz z wszystkimi zależnościami: [PieChar5 1.0.0 - jarki](https://github.com/TK-Wensday-1115/Chart5PieChart/releases)
+
 Obsługa zgodnie z IDE użytkownika, [przykładowo w IntelliJ](http://stackoverflow.com/a/7066035).
